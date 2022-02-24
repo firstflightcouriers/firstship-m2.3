@@ -1,0 +1,38 @@
+{
+    "name": "bhaveshpp/magento2-firstflight-firstship",
+    "description": "Magento 2 First Flight extension",
+    "type": "magento2-module",
+    "version": "1.0.0",  
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0", 
+         "zendframework/zend-barcode": "2.8.0"  
+    },
+    "license": [
+          "OSL-3.0",
+          "AFL-3.0"
+      ],
+    "keywords": [
+      "magento 2",
+      "firstflight"
+    ],
+    "authors": [
+      {
+        "name": "First Flight",
+        "email": "info@firstflightme.com",
+        "homepage": "https://firstflightme.com/",
+        "role": "Technical Support"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Firstflight\\Firstship\\": "",
+        "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+        "Magento\\Setup\\": "setup/src/Magento/Setup/",
+        "Magento\\": "app/code/Magento/",
+        "Zend\\Mvc\\Controller\\": "setup/src/Zend/Mvc/Controller/"
+      }
+    }
+  }
